@@ -71,7 +71,18 @@ public class Pokemon {
         this.defenseLevel = 0;
         this.name = "";
     }
+    public Pokemon(int hp, int al, int dl, String nombre){
 
+        final int d6num = 6;
+        final int d20num = 20;
+        this.d6 = new Dice(d6num);
+        this.d20 = new Dice(d20num);
+        this.hitPoints = hp;
+        this.attackLevel = al;
+        this.defenseLevel = dl;
+        this.name = nombre;
+
+    }
     /**
      * Attack another Pokemon.
      * <p>
